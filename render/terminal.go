@@ -9,7 +9,7 @@ func PrintGrid(grid game.Grid) {
 	for y := 0; y < game.Height; y++ {
 		for x := 0; x < game.Width; x++ {
 			if grid[y][x] == game.Alive {
-				fmt.Print("X")
+				fmt.Print("\033[92m█\033[0m")
 			} else {
 				fmt.Print(" ")
 			}

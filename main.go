@@ -4,6 +4,7 @@ import (
 	"conway-life/game"
 	"conway-life/render"
 	"conway-life/input"
+	"conway-life/utils"
 	"fmt"
 	"time"
 )
@@ -12,6 +13,9 @@ import (
 
 func main() {
 	grid := game.InitializeGrid()
+
+	utils.Glider(grid, 1, 1)
+	//utils.Blinker(grid, 5, 5)
 
 	if err := input.InitKeyboard(); err != nil {
 		panic(err)

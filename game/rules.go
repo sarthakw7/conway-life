@@ -4,7 +4,9 @@ func CountLiveNeighbors(grid Grid, y, x int) int {
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
 		for dx := -1; dx <= 1; dx++ {
-			ny, nx := y+dy, x+dx
+			ny := (y + dy + Height) % Height
+			nx := (x + dx + Width) % Width
+
 			if dy == 0 && dx == 0 {
 				continue
 			}

@@ -13,7 +13,7 @@ type Grid [][]Cell
 
 const (
 	Width = 50
-	Height = 30
+	Height = 20
 )
 
 func InitializeGrid() Grid {

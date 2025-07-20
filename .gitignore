@@ -1,0 +1,13 @@
+# Go build files
+/bin/
+/pkg/
+*.exe
+*.out
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Dependency directories
+vendor/
+

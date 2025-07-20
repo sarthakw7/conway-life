@@ -11,3 +11,8 @@
 # Dependency directories
 vendor/
 
+grid.json
+*.rle
+*.log
+*.DS_Store
+
